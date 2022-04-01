@@ -1,0 +1,43 @@
+<!-- HTML for Day 4 Task 2.1 -->
+<!-- Student number: 201578549 -->
+
+<!DOCTYPE html>
+
+<head>
+	<title>Earthquakes Map</title>
+	<!--This is a link to the Leaflet stylesheet-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" /> 
+	<!--This is a link to the Leaflet JS library-->
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+	<!-- Javascript for J-query  -->
+	<script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- Javascript file for fetching earthquake data -->
+	<script language="javascript" type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css"> <!--link to CSS file-->
+
+</head>
+
+<body onload = 'initialise()'>
+	<div class = "title">
+		<h1>Task 2.1: Map of Earthquakes in Indonesia </h1>
+	</div>
+	
+	<table id="table" border="1"> 
+		<tr> 
+		  <td> 
+			 <div id="map"></div> 
+		  </td> 
+		  <td valign="top" > 
+			<div id = "side_bar">
+				<p>This map shows all earthquakes recorded in Indonesia by the <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php"> USGS </a> over the thirty days preceding 
+					the 29th of March 2022. It has been created using the Leaflet library.
+					<br><br>
+					Markers are coloured using earthquake magnitude. 
+					<br><br>
+					Use the controls in the top right of the map to switch between time periods. 
+				</p>
+			</div> 
+		  </td> 
+		</tr> 
+	</table> 	 
+</body>
